@@ -1,7 +1,10 @@
-    html,
-    body,
+    /* html,
+    body, */
+    
     * {
         font-family: 'Lato', sans-serif;
+        margin: 0;
+        padding: 0;
     }
     
     body {
@@ -27,20 +30,19 @@
         justify-content: center;
         align-items: center;
         background-color: #363636;
-        width: 1.5rem;
-        padding: 0.6rem 0.5rem;
+        padding: 0.6rem 0.7rem;
         margin-left: 0.2px;
     }
     
     .uniform {
-        margin-left: 3em;
-        margin-right: 3rem;
+        margin-left: 3.6%;
+        margin-right: 3.6%;
     }
     
     .slider {
         background-color: #363636;
         color: #fff;
-        width: 77.5em;
+        width: 100%;
         height: 23em;
         display: flex;
         justify-content: center;
@@ -52,7 +54,7 @@
         color: #fff;
         text-align: center;
         line-height: 3px;
-        letter-spacing: 2rem;
+        letter-spacing: 0.3em;
     }
     
     .letterspacing {
@@ -77,7 +79,7 @@
     .main {
         background-color: #363636;
         color: #fff;
-        width: 77.3em;
+        width: 100%;
         height: 23em;
         display: flex;
     }
@@ -90,6 +92,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     
     .blurb {
@@ -101,15 +104,14 @@
         background: #363636;
         border: 1px solid #fff;
         padding: 5px 8px;
-        position: relative;
-        top: -10em;
-        left: 36em;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
     /* GRID 1 STYLE PROPERTIES STARTS FROM HERE */
     
     .grid1 {
         display: grid;
-        grid-template-columns: 38.5em 38.5em;
         grid-template-rows: 23em 23em;
         grid-row-gap: 0.3em;
         grid-column-gap: 0.3em;
@@ -124,15 +126,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        grid-column: 1/5;
+        position: relative;
     }
     
     .plus1 {
         background: #363636;
         border: 1px solid #fff;
         padding: 5px 8px;
-        position: relative;
-        top: -10em;
-        left: 35.6em;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
     
     .image2 {
@@ -144,15 +148,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        grid-column: 1/3;
+        position: relative;
     }
     
     .plus2 {
         background: #363636;
         border: 1px solid #fff;
         padding: 5px 8px;
-        position: relative;
-        top: -10em;
-        left: 16.3em;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
     
     .image3 {
@@ -164,15 +170,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        grid-column: 3/5;
+        position: relative;
     }
     
     .plus3 {
         background: #363636;
         border: 1px solid #fff;
         padding: 5px 8px;
-        position: relative;
-        top: -10em;
-        left: 16.2em;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
     /* BREAKOUT AREA STYLE PROPERTIES STARTS FROM HERE */
     
@@ -195,7 +203,7 @@
     .grid2 {
         display: grid;
         grid-template-columns: 10em 33.6em 33.6em;
-        grid-auto-rows: 24rem 24rem;
+        grid-template-rows: 24rem 24rem;
         gap: 0.1rem;
         color: #fff;
         margin-right: 3.9rem;
@@ -213,15 +221,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     
     .plusOne {
         background: #363636;
         border: 1px solid #fff;
         padding: 5px 8px;
-        position: relative;
-        top: -10.5em;
-        left: 30.5em;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
     
     .caption1 {
@@ -239,15 +248,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     
     .plusTwo {
         background: #363636;
         border: 1px solid #fff;
         padding: 5px 8px;
-        position: relative;
-        top: -10.5em;
-        left: 13.7em;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
     
     .img3 {
@@ -258,15 +268,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     
     .plusThree {
         background: #363636;
         border: 1px solid #fff;
         padding: 5px 8px;
-        position: relative;
-        top: -10.5em;
-        left: 13.7em;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
     
     .caption23 {
@@ -366,4 +377,62 @@
     .FooterNote {
         text-align: center;
         color: #363636;
+    }
+    /*/////// MEDIA QUERIES ///////*/
+    /* /////// SMART PHONE, ANDROID PHONES, LANDSCAPE IPHONE ///////*/
+    
+    @media (max-width: 576px) {
+        .header {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* text-align: center; */
+        }
+        .content h1 {
+            font-size: medium;
+        }
+        .grid1 {
+            display: flex;
+            flex-direction: column;
+        }
+        .image1 {
+            height: 23em;
+        }
+        .image2 {
+            height: 23em;
+        }
+        .image3 {
+            height: 23em;
+        }
+        .grid2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .img1 {
+            height: 23em;
+        }
+        .caption1 {
+            border-top: none;
+            text-align: center;
+        }
+        .img2 {
+            height: 23em;
+        }
+        .caption2 {
+            border-top: none;
+            text-align: center;
+        }
+        .img3 {
+            height: 23em;
+        }
+        .caption3 {
+            border-top: none;
+            text-align: center;
+        }
+        .footer {
+            font-size: small;
+        }
+        .flex {
+            flex-direction: column;
+        }
     }

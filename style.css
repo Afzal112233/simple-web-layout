@@ -202,11 +202,11 @@
     
     .grid2 {
         display: grid;
-        grid-template-columns: 10em 33.6em 33.6em;
+        grid-template-columns: 14% 43% 43%;
         grid-template-rows: 24rem 24rem;
         gap: 0.1rem;
         color: #fff;
-        margin-right: 3.9rem;
+        /*margin-right: 3.9rem;*/
     }
     
     .grid2>div {
@@ -332,8 +332,13 @@
         line-height: 0.01px;
     }
     
+    .block {
+        width: 23%;
+        margin: 0.1%;
+    }
+    
     .blocks {
-        width: 19rem;
+        width: 100%;
         height: 7rem;
         background-color: #363636;
     }
@@ -350,7 +355,7 @@
     }
     
     .margin {
-        margin: 1.6px
+        /*margin: 1%;*/
     }
     
     .footeralign {
@@ -380,6 +385,7 @@
     }
     /*/////// MEDIA QUERIES ///////*/
     /* /////// SMART PHONE, ANDROID PHONES, LANDSCAPE IPHONE ///////*/
+    /*    @media (min-width: 577px) and (max-width: 768px) {        */
     
     @media (max-width: 576px) {
         .header {
@@ -407,6 +413,7 @@
         .grid2 {
             display: flex;
             flex-direction: column;
+            margin-right: 0;
         }
         .img1 {
             height: 23em;

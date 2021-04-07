@@ -15,6 +15,9 @@
     .format {
         text-align: center;
         color: #fff;
+        letter-spacing: 0.3em;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
     }
     
     .header {
@@ -22,7 +25,8 @@
         justify-content: space-between;
         color: #fff;
         margin-left: 3em;
-        margin-right: 3em;
+        margin-right: 90px;
+        padding-top: 1em;
     }
     
     .logo {
@@ -31,19 +35,19 @@
         align-items: center;
         background-color: #363636;
         padding: 0.6rem 0.7rem;
-        margin-left: 0.2px;
+        margin-left: 42px;
     }
     
     .uniform {
-        margin-left: 3.6%;
-        margin-right: 3.6%;
+        margin-left: 6%;
+        margin-right: 6%;
     }
     
     .slider {
         background-color: #363636;
         color: #fff;
         width: 100%;
-        height: 23em;
+        height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,7 +58,22 @@
         color: #fff;
         text-align: center;
         line-height: 3px;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.7em;
+        font-size: 2em;
+        padding-top: 1em;
+        padding-bottom: 0.2em;
+    }
+    
+    .content h3 {
+        font-weight: lighter;
+        padding-bottom: 0.7em;
+        font-size: 13px;
+        color: grey;
+    }
+    
+    .content p {
+        color: grey;
+        padding-bottom: 1em;
     }
     
     .letterspacing {
@@ -66,6 +85,7 @@
     
     .section {
         text-align: center;
+        padding-bottom: 1em;
     }
     
     .section a {
@@ -80,7 +100,7 @@
         background-color: #363636;
         color: #fff;
         width: 100%;
-        height: 23em;
+        height: 400px;
         display: flex;
     }
     
@@ -98,6 +118,12 @@
     .blurb {
         color: #fff;
         text-align: center;
+        padding-top: 0.7em;
+    }
+    
+    .color {
+        color: grey;
+        padding-top: 0.8em;
     }
     
     .plus {
@@ -112,7 +138,7 @@
     
     .grid1 {
         display: grid;
-        grid-template-rows: 23em 23em;
+        grid-template-rows: 400px 400px;
         grid-row-gap: 0.3em;
         grid-column-gap: 0.3em;
     }
@@ -184,26 +210,58 @@
     }
     /* BREAKOUT AREA STYLE PROPERTIES STARTS FROM HERE */
     
-    .breakoutarea {
-        background: #fff;
-        padding: 7rem;
-        margin-top: 2rem;
-    }
-    
-    .breakoutarea>div {
-        color: #c2b9b9;
+    .whitearea {
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+        grid-template-rows: 300px;
+        grid-row-gap: 0.3em;
+        grid-column-gap: 0.3em;
     }
     
     .breakout {
         background: #fff;
-        text-align: left;
+    }
+    
+    .greybox {
+        background-color: grey;
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+    
+    .breakout {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    .breakout h3 {
+        padding-top: 5em;
+        margin-left: 4.3em;
+        padding-bottom: 1.5em;
+    }
+    
+    .breakout p {
+        margin-left: 5em;
+    }
+    
+    .greybox {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    .white {
+        background-color: #fff;
+        margin-top: 2em;
     }
     /* GIRD2 STYLE PROPERTIES STARTS FROM HERE */
     
     .grid2 {
         display: grid;
-        grid-template-columns: 14% 43% 43%;
-        grid-template-rows: 24rem 24rem;
+        grid-template-columns: 0.7fr 2fr 2fr;
+        grid-template-rows: 400px 400px;
         gap: 0.1rem;
         color: #fff;
         /*margin-right: 3.9rem;*/
@@ -298,13 +356,15 @@
     
     .borderCaptionTop {
         border-top: 2px solid #fff;
-        margin-left: 1rem;
-        padding: 0.3rem;
+        /* margin-left: 0.1rem; */
+        padding-top: 0.5em;
+        width: 80%;
     }
     
     .caption-para {
         color: #363636;
         font-family: 'Lato', sans-serif;
+        padding-top: 0.3em;
     }
     
     .borderHeaderTop {
@@ -324,16 +384,18 @@
         text-align: center;
         color: #fff;
         letter-spacing: 0.3em;
+        padding-top: 0.7em;
     }
     
     .footer-p {
         color: #363636;
         text-align: center;
         line-height: 0.01px;
+        padding-bottom: 1.5em;
     }
     
     .block {
-        width: 23%;
+        width: 22%;
         margin: 0.1%;
     }
     
@@ -341,6 +403,10 @@
         width: 100%;
         height: 7rem;
         background-color: #363636;
+    }
+    
+    .block h4 {
+        letter-spacing: 0.2em;
     }
     
     .textali {
@@ -377,11 +443,18 @@
         height: 1px;
         background-color: #363636;
         width: 20%;
+        margin: auto;
+    }
+    
+    .hr-centeralign {
+        text-align: center;
+        padding-top: 1em;
     }
     
     .FooterNote {
         text-align: center;
         color: #363636;
+        padding-top: 1em;
     }
     /*/////// MEDIA QUERIES ///////*/
     /* /////// SMART PHONE, ANDROID PHONES, LANDSCAPE IPHONE ///////*/
@@ -409,6 +482,11 @@
         }
         .image3 {
             height: 23em;
+        }
+        .breakoutarea {
+            padding-bottom: 5%;
+            padding-top: 3%;
+            padding-left: 3%;
         }
         .grid2 {
             display: flex;
@@ -438,8 +516,21 @@
         }
         .footer {
             font-size: small;
+            padding-bottom: 2%;
         }
         .flex {
             flex-direction: column;
+        }
+        .block {
+            width: 90%;
+        }
+        .horizontalrow {
+            text-align: center;
+        }
+    }
+    
+    @media (min-width:577px) and (max-width:768px) {
+        .caption3 {
+            padding-bottom: 2%;
         }
     }
